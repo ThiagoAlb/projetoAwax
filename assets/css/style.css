@@ -74,6 +74,10 @@ header {
     color: #CCC;
 }
 
+.menu-opener {
+    display: none;
+}
+
 .button {
     display: inline-block;
     background-color: var(--laranja-padrao);
@@ -605,7 +609,7 @@ CSS DE ÁREAS ESPECÍFICAS
     text-align:right;
 }
 .section-premium--left img {
-    width:300px;
+    width:220px;
     margin-right:30px;
 }
 .section-premium--right {
@@ -804,113 +808,6 @@ CSS DE ÁREAS ESPECÍFICAS
     height:auto;
 }
 
-
-
-
-
-@media (min-width:450px) and (max-width:800px) {
-    .logo {
-        margin-left:30px;
-    }
-    .menu-opener {
-        display:block;
-        width:45px;
-        margin-right:30px;
-    }
-    nav {
-        display:none;
-        position: absolute;
-        z-index: 99;
-        background-color: rgba(0, 0, 0, 0.9);
-        width: 70vw;
-        height: calc(100vh - 100px);
-        top: 100px;
-        right: 0;
-    }
-    .menu ul {
-        flex-direction:column;
-    }
-
-    .menu li a {
-        font-weight:bold;
-        height:80px;
-        font-size:27px;
-        margin-left:50px;
-        border:0;
-    }
-    .menu li.active a {
-        border:0;
-        color:#B28756;
-    }
-
-
-    .section-aboutus {
-        flex-direction:column;
-    }
-    .section-aboutus--left {
-        margin-left:30px;
-        margin-right:30px;
-        margin-bottom:30px;
-    }
-
-    .section-aboutus--right {
-        width:auto;
-    }
-
-    .section-services {
-        flex-wrap:wrap;
-    }
-    .section-service {
-        min-width:50%;
-        margin-bottom:30px;
-    }
-    .section-service:first-child {
-        border-left:0;
-    }
-
-    .section-team {
-        max-width:580px;
-    }
-
-    .section-price {
-        flex-wrap:wrap;
-    }
-    .section-price--item {
-        margin-left:20px;
-        min-width:calc(50% - 40px);
-        margin-bottom:20px;
-    }
-    .section-price--item:last-child {
-        margin-right:20px;
-    }
-
-    .section-facts {
-        flex-wrap:wrap;
-    }
-    .section-fact {
-        min-width:50%;
-    }
-
-
-    .section-map {
-        padding-left:30px;
-        padding-right:30px;
-    }
-    .section-map--area {
-        width:auto;
-    }
-    .section-map--info {
-        width:auto;
-    }
-    .section-map--info-item {
-        margin-bottom:20px;
-    }
-    .section-map--info-item:last-child {
-        margin-bottom:0;
-    }
-}
-
-
 footer {
     background-color: #000;
     padding: 20px;
@@ -981,6 +878,111 @@ footer {
     border-radius: 20px;
 }
 
+
+
+
+
+
+@media (min-width:450px) and (max-width:800px) {
+    .logo {
+        margin-left:30px;
+    }
+    .menu-opener {
+        display:block;
+        width:45px;
+        margin-right:30px;
+    }
+    nav {
+        display:none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction:column;
+    }
+
+    .menu li a {
+        font-weight:bold;
+        height:80px;
+        font-size:27px;
+        margin-left:50px;
+        border:0;
+    }
+    .menu li.active a {
+        border:0;
+        color: var(--laranja-padrao);
+    }
+
+    .section-aboutus {
+        flex-direction:column;
+    }
+    .section-aboutus--left {
+        margin-left:30px;
+        margin-right:30px;
+        margin-bottom:30px;
+    }
+
+    .section-aboutus--right {
+        width:auto;
+    }
+
+    .section-services {
+        flex-wrap:wrap;
+    }
+    .section-service {
+        min-width:50%;
+        margin-bottom:30px;
+    }
+    .section-service:first-child {
+        border-left:0;
+    }
+
+    .section-team {
+        max-width:580px;
+    }
+
+    .section-price {
+        flex-wrap:wrap;
+    }
+    .section-price--item {
+        margin-left:20px;
+        min-width:calc(50% - 40px);
+        margin-bottom:20px;
+    }
+    .section-price--item:last-child {
+        margin-right:20px;
+    }
+
+    .section-facts {
+        flex-wrap:wrap;
+    }
+    .section-fact {
+        min-width:50%;
+    }
+
+
+    .section-map {
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .section-map--area {
+        width:auto;
+    }
+    .section-map--info {
+        width:auto;
+    }
+    .section-map--info-item {
+        margin-bottom:20px;
+    }
+    .section-map--info-item:last-child {
+        margin-bottom:0;
+    }
+}
 
 
 
@@ -1060,6 +1062,17 @@ footer {
         margin-left:30px;
         margin-right:30px;
     }
+
+    .section-projects--filters ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-projects--filters ul li {
+        border: 0;
+    }
+
     .section-projects--photo {
         width:320px;
     }
